@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: darkblue;
+    color: cyan;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Center items vertically */
+    position: sticky; /* Make the navbar sticky */
+    top: 0; /* Stick it to the top of the viewport */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.enter-button {
+    padding: 10px 15px; /* Added padding */
+}
+
+.enter-button:hover {
+    background-color: cyan;
+    color: black;
+}
+
+.enter-button:active {
+    transform: translateY(2px);
+}
+
+.navbar-text {
+    color: cyan;
+    outline: 1px solid darkblue;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.block {
+    width: calc(33.33% - 20px);
+    max-width: 300px; /* Limit block width */
+    height: 100px; /* Adjust height as needed */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative; /* Add relative positioning for button animation */
+    border: 1px solid #ccc; /* Add border to separate content */
+}
+
+.block-section {
+    display: flex;
+    flex-wrap: wrap; /* Allow blocks to wrap to the next line if needed */
+    justify-content: center; /* Horizontally center blocks */
+    gap: 20px; /* Add gap between blocks */
+}
+.big-letter {
+    color: cyan; /* Text color */
+    text-align: center; /* Center align text */
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); /* Shadow */
+    -webkit-text-stroke: 1px darkblue; /* Dark blue outline for WebKit browsers */
+    text-stroke: 1px darkblue; /* Dark blue outline */
+}
+.enter-button {
+    background-color: darkblue; /* Dark blue background */
+    color: cyan; /* Cyan text */
+    border: none;
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for animation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow */
+}
+
+.enter-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.enter-button:active {
+    transform: scale(0.95); /* Zoom in effect when clicked */
+    box-shadow: none; /* Remove shadow when clicked */
+}
+
+.details {
+    background-color: rgba(255, 255, 0, 0.3); /* Semi-transparent yellow background */
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow */
+}
+
+.details p {
+    margin: 0; /* Remove default margin */
+    font-style: italic; /* Italic text */
+    color: darkblue; /* Dark blue text color */
+}
+.details {
+    position: fixed;
+    bottom: 20px; /* Adjust the distance from the bottom as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 0, 0.3); /* Semi-transparent yellow background */
+    padding: 10px; /* Add padding for spacing */
+    border-radius: 5px; /* Add border radius for rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow */
+    width: 80%; /* Adjust the width as needed */
+    max-width: 400px; /* Maximum width for responsiveness */
+}
+
+.details p {
+    margin: 0; /* Remove default margin */
+    font-style: italic; /* Italic text */
+    color: darkblue; /* Dark blue text color */
+}
+.search-input::placeholder {
+    color: darkblue; /* Dark blue placeholder text */
+    font-size: 0.8em; /* Adjust font size as needed */
+    
+}
+
+/* Style placeholder text */
+.search-input::placeholder {
+    color: darkblue; /* Dark blue placeholder text */
+    
+}
+
+/* Zoom effect when typing */
+.search-input:focus {
+    transform: scale(1.05); /* Zoom in when focused */
+}
+
+/* Revert to original size when not typing */
+.search-input:not(:focus) {
+    transform: scale(1); /* Original size when not focused */
+}
+.search-input {
+    border: 1px solid cyan;
+    border-radius: 20px; /* Rounded corners */
+    padding: 10px 10px; /* Adjust padding as needed */
+    width: 200px; /* Adjust width as needed */
+    height: 10px;
+    position: fixed;
+    right: 10px;
+    transition: transform 0.3s; /* Add transition for zoom effect */
+}
